@@ -1,4 +1,3 @@
-// useListTodos.js
 import { useEffect, useState } from 'react';
 import { completeTodo, deleteTodo, getAllTodos, inCompleteTodo } from '../services/TodoService';
 

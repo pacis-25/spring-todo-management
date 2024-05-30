@@ -14,7 +14,6 @@ const ListTodoComponent = () => {
     };
 
     const updateTodo = (id) => {
-        console.log(id);
         navigate(`/update-todo/${id}`);
     };
 

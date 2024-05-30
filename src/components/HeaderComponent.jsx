@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { isUserLoggedIn } from '../hooks/useLoggedInAuth'
 import { useNavigate } from 'react-router-dom'
+import { logout } from '../services/AuthService'
 
 const HeaderComponent = () => {
 
