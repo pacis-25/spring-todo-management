@@ -1,12 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { isUserLoggedIn, logout } from '../services/AuthService'
+import { isUserLoggedIn } from '../hooks/useLoggedInAuth'
 import { useNavigate } from 'react-router-dom'
 
 const HeaderComponent = () => {
 
     const isAuth = isUserLoggedIn();
-
     const navigator = useNavigate();
 
     function handleLogout(){

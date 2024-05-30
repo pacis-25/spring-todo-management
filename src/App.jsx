@@ -33,8 +33,8 @@ function App() {
           <Route path={ROUTE.TODO} element={<AuthenticatedRoute><ListTodoComponent/></AuthenticatedRoute>}></Route>
           <Route path={ROUTE.ADD_NEW_TODO} element={<AuthenticatedRoute><TodoComponent /></AuthenticatedRoute>}></Route>
           <Route path={ROUTE.UPDATE_TODO} element={<AuthenticatedRoute><TodoComponent /></AuthenticatedRoute>}></Route>
-          <Route path='/register' element = { <RegisterComponent />}></Route>
-          <Route path='/login' element = { <LoginComponent /> }></Route>
+          <Route path={ROUTE.REGISTER} element = { <RegisterComponent />}></Route>
+          <Route path={ROUTE.LOGIN} element = { <LoginComponent /> }></Route>
       </Routes>
       <FooterComponent />
     </BrowserRouter>

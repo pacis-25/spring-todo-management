@@ -15,18 +15,6 @@ export const saveLoggedInUser = (username, role) => {
     sessionStorage.setItem("role", role);
 }
 
-export const isUserLoggedIn = () => {
-
-    const username = sessionStorage.getItem("authenticatedUser");
-
-    if(username == null) {
-        return false;
-    }    
-    else {
-        return true;
-    }   
-}
-
 export const getLoggedInUser = () => {
     const username = sessionStorage.getItem("authenticatedUser");
     return username;
@@ -37,14 +25,3 @@ export const logout = () => {
     sessionStorage.clear();
 }
 
-export const isAdminUser = () => {
-
-    let role = sessionStorage.getItem("role");
-
-    if(role != null && role === 'ROLE_ADMIN'){
-        return true;
-    }else{
-        return false;
-    }
-
-}
